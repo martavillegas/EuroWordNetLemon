@@ -1,0 +1,435 @@
+# baseURI: http://lodserver.iula.upf.edu/euroWordNetMCR/
+
+@prefix dc:      <http://purl.org/dc/elements/1.1/#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix ewn:     <http://lodserver.iula.upf.edu/euroWordNetMCR/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix parole:  <http://lodserver.iula.upf.edu/ParoleSimple/ontology/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sumo:    <http://www.ontologyportal.org/SUMO.owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+ewn:  rdf:type owl:Ontology ;
+      rdfs:comment "This is the draft version of the Euro WordNet MCR ontology generated from the 'Word-Net-LMF lexicon' (see: the Multilingual Central Repository (MCR http://adimen.si.ehu.es/web/MCR).).  The ontology only contains (i) top concepts (with no hierarchy); (ii) synset relations (except gloss & rgloss) and (iii) 'MonolingualExternalRef' relations (sumo & topConcept) as used in the MCR. "@en ;
+      rdfs:label "Euro WordNet MCR ontology" ;
+      dc:creator "IULA - Universitat Pompeu Fabra" ;
+      dcterms:created "30-11-2014" ;
+      dcterms:rights <https://creativecommons.org/licenses/by/3.0/> .
+
+<http://lodserver.iula.upf.edu/euroWordNetMCR/1stOrderEntity>
+      rdf:type ewn:TopConcept ;
+      rdfs:label "1stOrderEntity"@en .
+
+<http://lodserver.iula.upf.edu/euroWordNetMCR/2ndOrderEntity>
+      rdf:type ewn:TopConcept ;
+      rdfs:label "2ndOrderEntity"@en .
+
+<http://lodserver.iula.upf.edu/euroWordNetMCR/3rdOrderEntity>
+      rdf:type ewn:TopConcept ;
+      rdfs:label "3rdOrderEntity"@en .
+
+ewn:Agentive
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Agentive"@en .
+
+ewn:Animal
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Animal"@en .
+
+ewn:Artifact
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Artifact"@en .
+
+ewn:BoundedEvent
+      rdf:type ewn:TopConcept ;
+      rdfs:label "BoundedEvent"@en .
+
+ewn:Building
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Building"@en .
+
+ewn:Cause
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Cause"@en .
+
+ewn:Comestible
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Comestible"@en .
+
+ewn:Communication
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Communication"@en .
+
+ewn:Composition
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Composition"@en .
+
+ewn:Condition
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Condition"@en .
+
+ewn:Container
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Container"@en .
+
+ewn:Covering
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Covering"@en .
+
+ewn:Creature
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Creature"@en .
+
+ewn:Dynamic
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Dynamic"@en .
+
+ewn:Existence
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Existence"@en .
+
+ewn:Experience
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Experience"@en .
+
+ewn:Function
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Function"@en .
+
+ewn:Furniture
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Furniture"@en .
+
+ewn:Garment
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Garment"@en .
+
+ewn:Gas
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Gas"@en .
+
+ewn:Group
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Group"@en .
+
+ewn:Human
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Human"@en .
+
+ewn:ImageRepresentation
+      rdf:type ewn:TopConcept ;
+      rdfs:label "ImageRepresentation"@en .
+
+ewn:Instrument
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Instrument"@en .
+
+ewn:LanguageRepresentation
+      rdf:type ewn:TopConcept ;
+      rdfs:label "LanguageRepresentation"@en .
+
+ewn:Liquid
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Liquid"@en .
+
+ewn:Living
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Living"@en .
+
+ewn:Location
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Location"@en .
+
+ewn:Manner
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Manner"@en .
+
+ewn:Mental
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Mental"@en .
+
+ewn:Modal
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Modal"@en .
+
+ewn:MoneyRepresentation
+      rdf:type ewn:TopConcept ;
+      rdfs:label "MoneyRepresentation"@en .
+
+ewn:Natural
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Natural"@en .
+
+ewn:Object
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Object"@en .
+
+ewn:Occupation
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Occupation"@en .
+
+ewn:Origin
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Origin"@en .
+
+ewn:Part
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Part"@en .
+
+ewn:Phenomenal
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Phenomenal"@en .
+
+ewn:Physical
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Physical"@en .
+
+ewn:Place
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Place"@en .
+
+ewn:Plant
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Plant"@en .
+
+ewn:Possession
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Possession"@en .
+
+ewn:Property
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Property"@en .
+
+ewn:Purpose
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Purpose"@en .
+
+ewn:Quantity
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Quantity"@en .
+
+ewn:Relation
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Relation"@en .
+
+ewn:Representation
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Representation"@en .
+
+ewn:SituationComponents
+      rdf:type ewn:TopConcept ;
+      rdfs:label "SituationComponents"@en .
+
+ewn:SituationType
+      rdf:type ewn:TopConcept ;
+      rdfs:label "SituationType"@en .
+
+ewn:Social
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Social"@en .
+
+ewn:Solid
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Solid"@en .
+
+ewn:Static
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Static"@en .
+
+ewn:Stimulating
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Stimulating"@en .
+
+ewn:Substance
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Substance"@en .
+
+ewn:Synset
+      rdf:type owl:Class ;
+      rdfs:label "Synset@en}"^^xsd:string ;
+      rdfs:subClassOf owl:Thing .
+
+ewn:Time
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Time"@en .
+
+ewn:TopConcept
+      rdf:type owl:Class ;
+      rdfs:label "Euro WordNet Top Concept. Note: EWN Top Concepts are not further organised but rather they are listed as instances of the class TopConcept"@en .
+
+ewn:UnboundedEvent
+      rdf:type ewn:TopConcept ;
+      rdfs:label "UnboundedEvent"@en .
+
+ewn:Usage
+      rdf:type ewn:TopConcept ;
+      rdfs:label "Usage"@en .
+
+ewn:be_in_state
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "be_in_state"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:category
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "category"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:category_term
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "category_term"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:causes
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "causes"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:has_derived
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has_derived"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:has_holo_madeof
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has_holo_madeof"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:has_holo_member
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has_holo_member"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:has_holo_part
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has_holo_part"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:has_hyperonym
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has_hyperonym"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:has_hyponym
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has_hyponym"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:has_mero_madeof
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has_mero_madeof"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:has_mero_member
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has_mero_member"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:has_mero_part
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has_mero_part"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:has_subevent
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has_subevent"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:is_caused_by
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "is_caused_by"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:is_derived_from
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "is_derived_from"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:is_subevent_of
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "is_subevent_of"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:near_antonym
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "near_antonym"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:near_synonym
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "near_synonym"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:region
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "region"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:region_term
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "region_term"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:related_to
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "related_to"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:see_also_wn15
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "see_also_wn15"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:state_of
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "state_of"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:sumo
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "Used to point to SUMO (http://www.ontologyportal.org/SUMO.owl#). "@en .
+
+ewn:sumo_at
+      rdf:type owl:ObjectProperty ;
+      rdf:subPropertyOf ewn:sumo ;
+      rdfs:label "Used to point to SUMO (http://www.ontologyportal.org/SUMO.owl#). This property corresponds to the original MonolingualExternalRef element with @externalSystem='SUMO & relType='at'"@en ;
+      rdfs:subPropertyOf ewn:sumo .
+
+ewn:sumo_equal
+      rdf:type owl:ObjectProperty ;
+      rdf:subPropertyOf ewn:sumo ;
+      rdfs:label "Used to point to SUMO (http://www.ontologyportal.org/SUMO.owl#). This property corresponds to the original MonolingualExternalRef element with @externalSystem='SUMO & relType='equal'"@en ;
+      rdfs:subPropertyOf ewn:sumo .
+
+ewn:sumo_plus
+      rdf:type owl:ObjectProperty ;
+      rdf:subPropertyOf ewn:sumo ;
+      rdfs:label "Used to point to SUMO (http://www.ontologyportal.org/SUMO.owl#). This property corresponds to the original MonolingualExternalRef element with @externalSystem='SUMO & relType='plus'"@en ;
+      rdfs:subPropertyOf ewn:sumo .
+
+ewn:synsetRelation
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain ewn:Synset ;
+      rdfs:label "Semantic Relation@en}"^^xsd:string ;
+      rdfs:range ewn:Synset .
+
+ewn:topConcept
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "Used to point to a Euro WordNet Top Concept. This property corresponds to the original MonolingualExternalRef element with @externalSystem='TCO'"@en ;
+      rdfs:range ewn:TopConcept .
+
+ewn:usage
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "usage"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:usage_term
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "usage_term"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
+
+ewn:verb_group
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "verb_group"@en ;
+      rdfs:subPropertyOf ewn:synsetRelation .
