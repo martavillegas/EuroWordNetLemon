@@ -247,7 +247,7 @@ ewn:Substance
 
 ewn:Synset
       rdf:type owl:Class ;
-      rdfs:label "Synset@en}"^^xsd:string ;
+      rdfs:label "Synset"@en ;
       rdfs:subClassOf owl:Thing .
 
 ewn:Time
