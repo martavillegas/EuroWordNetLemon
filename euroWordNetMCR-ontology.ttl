@@ -411,7 +411,7 @@ ewn:sumo_plus
 ewn:synsetRelation
       rdf:type owl:ObjectProperty ;
       rdfs:domain ewn:Synset ;
-      rdfs:label "Semantic Relation@en}"^^xsd:string ;
+      rdfs:label "Semantic Relation"@en ;
       rdfs:range ewn:Synset .
 
 ewn:topConcept
